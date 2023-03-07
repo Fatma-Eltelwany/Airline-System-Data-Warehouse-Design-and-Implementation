@@ -1,0 +1,17 @@
+We choose Galaxy star schema because we have more than one fact table (four business processes)
+and we choose the granularity for each business process to be atomic
+so each individual row in the fact table represents the lowest level of details for example
+
+in flight activity fact table the granularity per ticket no so every row represents details about flights 
+for every ticket no.
+
+in frequent flyer fact table the granularity per passenger,so every row represents details about flights
+ each frequent flyer had.
+
+in reservation fact table the granularity per every reservation ,so every row represents details about
+ all flights reservations.
+
+in interaction fact tble the granularity per every interaction, so very row represents details about 
+ all customer interactions.
+
+ 
